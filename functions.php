@@ -425,7 +425,7 @@ function add_blog_post($author, $title, $text, $date, $abstract, $picture = "")
 	return $crypt;
 }
 
-function getBlogPosts()
+function getBlogPosts($category = "")
 {
 	$db = new db_functions();
     $db->db_connect();
@@ -436,7 +436,19 @@ function getBlogPosts()
 
 	$result = $db->db_query($query);
 
-	return makeRowsArray($result, $db);
+	$temp = makeRowsArray($result, $db);
+
+	if($category == "")
+		return $temp;
+
+	$final = array();
+
+	foreach ($temp as $blog) {
+		if($blog[8] == $category)
+			array_push($final, $blog);
+	}
+
+	return $final;
 }
 
 function makeRowsArray($result, $db)
