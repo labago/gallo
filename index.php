@@ -87,19 +87,7 @@
 				</div>
 				
 				<!-- nav -->
-				<ul id="nav" class="sf-menu">
-					<li class="current-menu-item"><a href="index.php">HOME</a></li>
-					<li><a href="blog.php">BLOG</a></li>
-					<li><a href="page.html">ABOUT</a>
-						<ul>
-							<li><a href="page-elements.html">Elements</a></li>
-							<li><a href="page-icons.html">Icons</a></li>
-							<li><a href="page-typography.html">Typography</a></li>
-						</ul>
-					</li>
-					<li><a href="portfolio.html">WORK</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
+				<?php include("components/main-navigation.php"); ?>
 				<div id="combo-holder"></div>
 				<!-- ends nav -->
 				
@@ -113,7 +101,7 @@
 					<div class="main-slider-content" >
 					<ul class="sliders-wrap-inner">
 					    <li>
-					          <img src="img/dummies/slides/01.jpg" title="" alt="alt" />           
+					          <img src="https://pbs.twimg.com/media/BVgWv5KIgAARxT2.jpg" title="" alt="alt" />           
 					          <div class="slider-description">
 					            <h4>Lorem ipsum dolor</h4>
 					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -123,7 +111,7 @@
 					    </li>
 					    
 					    <li>
-					          <img src="img/dummies/slides/02.jpg" title="" alt="alt" />           
+					          <img src="http://static.foxsports.com/content/fscom/img/2013/09/30/093013-NFL-PATRIOTS-VINCE-WILFORK-DC-PI_20130930232816352_660_320.JPG" title="" alt="alt" />           
 					          <div class="slider-description">
 					            <h4>Lorem ipsum dolor</h4>
 					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -133,7 +121,7 @@
 					    </li>
 					    
 					    <li>
-					          <img src="img/dummies/slides/03.jpg" title="" alt="alt" />           
+					          <img src="http://fancardblog.com/wp-content/uploads/2013/06/New-England-Patriots-415.png" title="" alt="alt" />
 					          <div class="slider-description">
 					            <h4>Lorem ipsum dolor</h4>
 					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
@@ -190,9 +178,9 @@
 					<div class="navigator-content">
 					  <div class="navigator-wrapper">
 					        <ul class="navigator-wrap-inner">
-					           <li><img src="img/dummies/slides/01_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/02_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/03_thumb.jpg" alt="alt" /></li>
+					           <li><img src="https://pbs.twimg.com/media/BVgWv5KIgAARxT2.jpg" alt="alt" /></li>
+					           <li><img src="http://static.foxsports.com/content/fscom/img/2013/09/30/093013-NFL-PATRIOTS-VINCE-WILFORK-DC-PI_20130930232816352_660_320.JPG" alt="alt" /></li>
+					           <li><img src="http://fancardblog.com/wp-content/uploads/2013/06/New-England-Patriots-415.png" alt="alt" /></li>
 					           <li><img src="img/dummies/slides/04_thumb.jpg" alt="alt" /></li>
 					           <li><img src="img/dummies/slides/05_thumb.jpg" alt="alt" /></li>
 					           <li><img src="img/dummies/slides/06_thumb.jpg" alt="alt" /></li>
@@ -219,7 +207,7 @@
 		<!-- ENDS HEADER -->
 		
 		<!-- MAIN -->
-		<div id="main">
+		<div class="main home-column">
 			<div class="wrapper cf">
 			
 			

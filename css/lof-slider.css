@@ -49,6 +49,10 @@
   float: left;
   position: relative;
 }
+.lof-slidecontent ul.sliders-wrap-inner li img {
+  width: 100%;
+}
+
 .lof-slidecontent .lof-opacity li {
   position: absolute;
   top: 0;
@@ -172,6 +176,7 @@
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  width: 100%;
 }
 .lof-slidecontent .navigator-wrap-inner li img:hover {
   opacity: 0.2;

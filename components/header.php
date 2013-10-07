@@ -90,19 +90,7 @@
 				</div>
 				
 				<!-- nav -->
-				<ul id="nav" class="sf-menu">
-					<li><a href="index.php"><span>HOME</span></a></li>
-					<li><a href="blog.php">BLOG</a></li>
-					<li><a href="page.html">ABOUT</a>
-						<ul>
-							<li><a href="page-elements.html">Elements</a></li>
-							<li><a href="page-icons.html">Icons</a></li>
-							<li><a href="page-typography.html">Typography</a></li>
-						</ul>
-					</li>
-					<li><a href="portfolio.html">WORK</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
+				<?php include("main-navigation.php"); ?>
 				<div id="combo-holder"></div>
 				<!-- ends nav -->
 

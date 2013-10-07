@@ -1,7 +1,7 @@
 <?php include("../functions.php"); ?>
 <?php include("components/header.php"); ?>
 		<!-- MAIN -->
-		<div id="main">
+		<div class="main">
 			<div class="wrapper cf">
 			
 				

@@ -393,7 +393,7 @@ function genArticle($id)
 }
 
 // adds a new user with some optional parameters
-function add_blog_post($author, $title, $text, $date, $abstract, $picture = "")
+function add_blog_post($author, $title, $text, $date, $abstract, $picture = "", $category, $tags = "")
 {
 
 	$db = new db_functions();
@@ -412,11 +412,13 @@ function add_blog_post($author, $title, $text, $date, $abstract, $picture = "")
 						`Crypt` ,
 						`Abstract` ,
 						`Picture` ,
-						`Views`
+						`Views`,
+						`Category`,
+						`Tags`
 						)
 						VALUES (
 						'$author', '$title', '$text',
-						CURRENT_TIMESTAMP , '$crypt', '$abstract', '$picture', '0'
+						CURRENT_TIMESTAMP , '$crypt', '$abstract', '$picture', '0', '$category', '$tags'
 						);";
 
 	$db->db_query($query);

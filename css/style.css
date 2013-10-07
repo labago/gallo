@@ -198,7 +198,12 @@ header .wrapper #home-slider {
   display: inline-block;
 }
 
-body.home #main {
+
+.main {
+  padding-top: 20px;
+}
+
+.home-column {
   padding-top: 120px;
 }
 /* HEADLINE ----------------------------------------------------*/#headline {
