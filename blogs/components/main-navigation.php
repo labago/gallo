@@ -8,7 +8,6 @@
 			<li><a href="college-football.php">College Footbal</a></li>
 		</ul>
 	</li>
-	<li><a href="../page.html">ABOUT</a></li>
-	<li><a href="../portfolio.html">WORK</a></li>
-	<li><a href="../contact.html">CONTACT</a></li>
+	<!-- <li><a href="../page.html">ABOUT</a></li> -->
+	<li><a href="../contact.php">CONTACT</a></li>
 </ul>

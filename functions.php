@@ -363,11 +363,13 @@ function genArticle($id)
 	?>
 	<!-- Standard -->
 		<article class="format-standard">
+			<?php if($row[6] != ""){ ?>
 			<div class="feature-image">
 				<a href="post.php?id=<?php echo $row[4]; ?>">
 					<img src="<?php echo $row[6]; ?>" alt="Alt text" />
 				</a>
 			</div>
+			<?php } ?>
 			<div class="box cf">
 				<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
 				
@@ -483,9 +485,11 @@ function getFullBlogPost($id)
 	?>
 	<!-- Standard -->
 	<article class="format-standard">
+		<?php if($row[6] != ""){ ?>
 		<div class="feature-image">
 			<img src="<?php echo $row[6]; ?>" alt="Alt text" />
 		</div>
+		<?php } ?>
 		<div class="box cf">
 			<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
 			
@@ -531,8 +535,10 @@ function genMosaic($id)
 		$tag_string = genTags($row[9]);
 
 	?>
-	<figure class="<?php echo $tag_string; ?>">
+	<figure class="<?php echo strtolower($tag_string); ?>">
+		<?php if($row[6] != ""){ ?>
 		<a href="post.php?id=<?php echo $row[4]; ?>" class="thumb"><img src="<?php echo $row[6]; ?>" alt="alt" /></a>
+		<?php } ?>
 		<figcaption>
 			<a href="post.php?id=<?php echo $row[4]; ?>"><h3 class="heading"><?php echo $row[1]; ?></h3></a>
 			<?php echo $row[5]; ?>

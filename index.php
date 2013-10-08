@@ -101,16 +101,19 @@
 					<div class="main-slider-content" >
 					<ul class="sliders-wrap-inner">
 					    <li>
-					          <img src="https://pbs.twimg.com/media/BVgWv5KIgAARxT2.jpg" title="" alt="alt" />           
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
+					          <img src="http://mlb.mlb.com/bos/images/ballpark/fenway_480x200.jpg" title="" alt="alt" />           
+					    </li>
+					    <li>
+					          <img src="http://media.wbur.org/wordpress/1/files/2012/11/1113_celtics.jpg" title="" alt="alt" />           
+					    </li>
+					    <li>
+					          <img src="http://www.boston.com/sports/football/patriots/extra_points/123012justinfrancis609.jpg" title="" alt="alt" />           
+					    </li>
+					    <li>
+					          <img src="http://mlb.mlb.com/bos/images/ballpark/fenway_480x200.jpg" title="" alt="alt" />           
 					    </li>
 					    
-					    <li>
+					    <!-- <li>
 					          <img src="http://static.foxsports.com/content/fscom/img/2013/09/30/093013-NFL-PATRIOTS-VINCE-WILFORK-DC-PI_20130930232816352_660_320.JPG" title="" alt="alt" />           
 					          <div class="slider-description">
 					            <h4>Lorem ipsum dolor</h4>
@@ -118,57 +121,8 @@
 					            <a class="link" href="#">Read more </a>
 					            </p>
 					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="http://fancardblog.com/wp-content/uploads/2013/06/New-England-Patriots-415.png" title="" alt="alt" />
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/04.jpg" title="" alt="alt" />           
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/05.jpg" title="" alt="alt" />           
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/06.jpg" title="" alt="alt" />           
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
-					    </li>
-					    
-					    <li>
-					          <img src="img/dummies/slides/07.jpg" title="" alt="alt" />           
-					          <div class="slider-description">
-					            <h4>Lorem ipsum dolor</h4>
-					            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est...
-					            <a class="link" href="#">Read more </a>
-					            </p>
-					         </div>
-					    </li>
+					    </li> -->
+					   
 					    
 					  </ul>  	
 					</div>
@@ -178,13 +132,15 @@
 					<div class="navigator-content">
 					  <div class="navigator-wrapper">
 					        <ul class="navigator-wrap-inner">
-					           <li><img src="https://pbs.twimg.com/media/BVgWv5KIgAARxT2.jpg" alt="alt" /></li>
-					           <li><img src="http://static.foxsports.com/content/fscom/img/2013/09/30/093013-NFL-PATRIOTS-VINCE-WILFORK-DC-PI_20130930232816352_660_320.JPG" alt="alt" /></li>
-					           <li><img src="http://fancardblog.com/wp-content/uploads/2013/06/New-England-Patriots-415.png" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/04_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/05_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/06_thumb.jpg" alt="alt" /></li>
-					           <li><img src="img/dummies/slides/07_thumb.jpg" alt="alt" /></li>
+					             <li>
+							          <img src="http://mlb.mlb.com/bos/images/ballpark/fenway_480x200.jpg" title="" alt="alt" />           
+							    </li>
+							    <li>
+							          <img src="http://media.wbur.org/wordpress/1/files/2012/11/1113_celtics.jpg" title="" alt="alt" />           
+							    </li>
+							    <li>
+							          <img src="http://www.boston.com/sports/football/patriots/extra_points/123012justinfrancis609.jpg" title="" alt="alt" />           
+							    </li>
 					        </ul>
 					  </div>
 					  <div class="button-next">Next</div>

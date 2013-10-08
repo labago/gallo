@@ -25,12 +25,12 @@
 					
 				<!-- comments list -->
 				<div id="comments-wrap">
-					<h4 class="heading">5 Comments</h4>
+					<!-- <h4 class="heading">5 Comments</h4> -->
 					
 					<ol class="commentlist">
 					  
 					           
-						<li class="comment even thread-even depth-1" id="li-comment-1">
+						<!-- <li class="comment even thread-even depth-1" id="li-comment-1">
 							
 							<div id="comment-1" class="comment-body cf">
 						     	<img alt='' src='http://0.gravatar.com/avatar/4f64c9f81bb0d4ee969aaf7b4a5a6f40?s=35&amp;d=&amp;r=G' class='avatar avatar-35 photo' height='35' width='35' />      
@@ -45,7 +45,6 @@
 						 		</div>
 					     	</div>
 					
-							<!-- child -->
 							<ul class='children'>
 					  			<li class="comment even alt depth-2" id="li-comment-2-1">
 									<div id="comment-2" class="comment-body cf">
@@ -77,7 +76,6 @@
 								
 								
 							</ul>
-							<!-- ENDS child -->
 						</li>
 						
 						
@@ -120,7 +118,7 @@
 					    
 					    
 					    
-					   
+					    -->
 						
 					</ol>
 				</div>
@@ -129,7 +127,7 @@
 						
 				<!-- Respond -->				
 				<div id="respond">
-					<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/themes/wp-simpler/archives/34#respond" style="display:none;">Cancel reply</a></small></h3>
+					<!-- <h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/themes/wp-simpler/archives/34#respond" style="display:none;">Cancel reply</a></small></h3>
 					
 					
 					<form action="single.html" method="post" id="commentform">
@@ -142,9 +140,7 @@
 					
 					<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						
 													
-					<!-- allowed tags -->
 					<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						
-					<!-- ENDS allowed tags -->
 					
 					<p class="form-submit">
 						<input name="submit" type="submit" id="submit" value="Post Comment">
@@ -152,7 +148,7 @@
 						<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 					</p>
 					
-					</form>
+					</form> -->
 				</div>
 				<!-- ENDS Respond -->
 					

@@ -21,7 +21,7 @@ else {
 	?>
 	<body>
 <center>
-		<form action="submit-post.php" method="post">
+		<form action="preview.php" method="post">
 		Author: <input type="text" name="author" size="21" >
 		<br>
 		Title: <input type="text" name="title" size="21" >

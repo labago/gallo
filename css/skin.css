@@ -3,30 +3,34 @@
   background: #f1ede8 url(../img/noise-all.png);
 }
 body a:hover {
-  color: #cb5432;
+  color: black;
 }
+.logo-text a:hover{
+  color: #F6D046;
+}
+
 a {
-  color: #cb5432;
+  color: #F6D046;
 }
 header,
 footer {
-  background: #2d2d2d;
+  background: black;
 }
 /* Selection colours (easy to forget) */
 ::selection {
-  background: #cb5432;
+  background: #F6D046;
 }
 ::-moz-selection {
-  background: #cb5432;
+  background: #F6D046;
 }
 img::selection {
-  background: #cb5432;
+  background: #F6D046;
 }
 img::-moz-selection {
-  background: #cb5432;
+  background: #F6D046;
 }
 body {
-  -webkit-tap-highlight-color: #cb5432;
+  -webkit-tap-highlight-color: #F6D046;
 }
 #headline,
 .masthead {
@@ -41,7 +45,7 @@ body {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  border-top: 3px solid #cb5432;
+  border-top: 3px solid #F6D046;
 }
 #nav span:hover {
   -webkit-transform: translate(-10px, -3px);
@@ -51,7 +55,7 @@ body {
 }
 #nav > li.current-menu-item > a,
 #nav > li.current_page_item > a {
-  border-top: 3px solid #cb5432;
+  border-top: 3px solid #F6D046;
 }
 #nav .sfHover ul {
   background: #f8f5f2;
@@ -61,7 +65,7 @@ body {
 }
 #nav .sfHover ul li a:hover {
   background: rgba(0, 0, 0, 0.8);
-  color: #cb5432;
+  color: #F6D046;
 }
 /* MAIN ------------------------------------------------------------*/
 .multiplebgs #main {
@@ -84,48 +88,48 @@ body {
   background: #f8f5f2;
 }
 #filter-container figure .thumb {
-  background: #cb5432 url(../img/icon-link.png) center center no-repeat;
+  background: #F6D046 url(../img/icon-link.png) center center no-repeat;
 }
 #filter-container figure figcaption .heading {
   color: #444444;
 }
 #filter-container figure figcaption .heading:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 #filter-container figure .readmore {
   color: #444444;
 }
 #filter-container figure .readmore:hover h5 {
-  color: #cb5432;
+  color: #F6D046;
 }
 /* PORTFOLIO ----------------------------------------------------*/#portfolio-content #filter-container a {
   color: #888;
 }
 #portfolio-content #filter-container a:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 #portfolio-content .project-pager a {
   color: #444444;
 }
 #portfolio-content .project-pager a:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 #portfolio-content #project-box {
   background: #f8f5f2;
 }
 #portfolio-content #project-box .info .launch:hover {
   color: #f1f1f1;
-  background: #cb5432;
+  background: #F6D046;
 }
 /* RELATED PROJECTS ---------------------------------------------------*/
 .related-projects figure .heading {
   color: #444444;
 }
 .related-projects figure .heading:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 .related-projects figure .thumb {
-  background: #cb5432 url(../img/icon-link.png) no-repeat center center;
+  background: #F6D046 url(../img/icon-link.png) no-repeat center center;
 }
 /* CONTACT  ----------------------------------------------------*/#map-holder {
   background: #f8f5f2;
@@ -142,26 +146,26 @@ body {
   color: #444444;
 }
 #posts-list article .box .excerpt .post-heading:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 #posts-list article .box .excerpt .learnmore {
   background: #2d2d2d;
   color: #f8f5f2;
 }
 #posts-list article .box .excerpt .learnmore:hover {
-  background: #cb5432;
+  background: #F6D046;
 }
 #posts-list article .box .meta a {
   color: #656360;
 }
 #posts-list article .box .meta a:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 #posts-list article.format-standard .feature-image {
-  background: #cb5432 url(../img/icon-link.png) no-repeat center center;
+  background: #F6D046 url(../img/icon-link.png) no-repeat center center;
 }
 #posts-list article.format-image .feature-image {
-  background: #cb5432 url(../img/icon-popup.png) no-repeat center center;
+  background: #F6D046 url(../img/icon-popup.png) no-repeat center center;
 }
 body.single #posts-list article {
   background: #f8f5f2;
@@ -174,7 +178,7 @@ body.single #posts-list .box .meta {
   color: #444444;
 }
 #main .page-navigation a:hover {
-  color: #cb5432;
+  color: #F6D046;
 }
 /* SIDEBAR ------------------------------------------------------------*/
 #sidebar .cat-item a .post-counter,
@@ -191,7 +195,7 @@ body.single #posts-list .box .meta {
   color: #fcb019;
 }
 .lof-slidecontent .active {
-  border-top: 3px #cb5432 solid;
+  border-top: 3px #F6D046 solid;
 }
 /* FOOTER ----------------------------------------------------*/footer {
   color: #dcd2be;
@@ -200,7 +204,7 @@ footer h4 {
   color: #fff;
 }
 footer a {
-  color: #cb5432;
+  color: #F6D046;
 }
 footer a:hover {
   color: #fff;

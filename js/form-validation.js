@@ -48,15 +48,11 @@ jQuery(document).ready(function($){
 		// data string
 		var dataString = 'name='+ name
 						+ '&email=' + email        
-						+ '&web=' + web
-						+ '&comments=' + comments
-						+ '&to=' + to
-						+ '&from=' + from
-						+ '&subject=' + subject;						         
+						+ '&comments=' + comments						         
 		// ajax
 		$.ajax({
 			type:"POST",
-			url: sendMailUrl,
+			url: "send-mail.php",
 			data: dataString,
 			success: success()
 		});
@@ -65,8 +61,8 @@ jQuery(document).ready(function($){
 		
 	// on success...
 	 function success(){
-	 	$("#sent-form-msg").fadeIn();
-	 	$("#contactForm").fadeOut();
+	 	$('#sent-form-msg').fadeIn();
+	 	$('#contactForm').fadeOut();
 	 }
 	
     return false;

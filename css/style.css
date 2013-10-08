@@ -104,6 +104,11 @@ h6 {
 /* ENTRY CONTENT ----------------------------------------------------*/.entry-content .heading {
   margin-bottom: 1.5em;
 }
+
+.entry-content{
+  line-height: 25px;
+  margin-right: 35px;
+}
 /* COMBO NAVIGATION ------------------------------------------------------------*/
 #comboNav {
   width: 100%;
