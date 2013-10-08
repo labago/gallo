@@ -45,6 +45,20 @@ else {
 		<br>
 		<input type="submit" value="Submit" name="submit">
 		</form>
+
+
+		TIPS:
+
+		For a link use &lt;a href="LINK HERE"&gt;TEXT TO DISPLAY HERE&lt;/a&gt;</pre>
+		<br>
+		<br>
+		For a line break (equivelant to hitting the enter key) use <pre>&lt;br /&gt;</pre>
+		<br>
+		<br>
+		For an image use <pre>&lt;img src="LINK TO IMAGE HERE" &gt;</pre>
+		<br>
+		<br>
+		<p>I will have to define some CSS classes that you can use for things like bold and italics a little later.<p>
 </center>
 	</body>
 	<?php

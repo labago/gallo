@@ -359,7 +359,7 @@ function genArticle($id)
 
 	if($row = $db->db_fetch_row($result))
 	{
-
+		$tag_string = genTags($row[9], true);
 	?>
 	<!-- Standard -->
 		<article class="format-standard">
@@ -372,8 +372,8 @@ function genArticle($id)
 				<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
 				
 				<div class="excerpt">
-					<a href="post.php?id=<?php echo $row[4]; ?>" class="post-heading" ><?php echo $row[1]; ?></a>
-					<p><?php echo $row[2]; ?></p>
+					<a href="post.php?id=<?php echo $row[4]; ?>" class="post-heading" ><?php echo html_entity_decode($row[1]); ?></a>
+					<p><?php echo html_entity_decode($row[5]); ?></p>
 					
 					<p><a href="post.php?id=<?php echo $row[4]; ?>" class="learnmore">Learn More</a></p>
 				</div>
@@ -382,7 +382,7 @@ function genArticle($id)
 					<span class="format">Post</span>
 					<span class="user"><a href="#">By <?php echo $row[0]; ?>, </a></span>
 					<span class="comments">0 comments</span>
-					<span class="tags"><a href="#">test</a>, <a href="#">test</a>, <a href="#">test</a>, <a href="#">test</a></span>
+					<span class="tags"><?php echo $tag_string; ?></span>
 				</div>
 					
 			</div>
@@ -479,7 +479,7 @@ function getFullBlogPost($id)
 
 	if($row = $db->db_fetch_row($result))
 	{
-
+		$tag_string = genTags($row[9], true);
 	?>
 	<!-- Standard -->
 	<article class="format-standard">
@@ -490,11 +490,11 @@ function getFullBlogPost($id)
 			<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
 			
 			<div class="excerpt">
-				<div class="post-heading" ><?php echo $row[1]; ?></div>
+				<div class="post-heading" ><?php echo html_entity_decode($row[1]); ?></div>
 				<div class="entry-content">
 				
 					
-					<p><?php echo $row[2]; ?></p>
+					<p><?php echo html_entity_decode($row[2]); ?></p>
 				</div>
 				
 				
@@ -502,9 +502,9 @@ function getFullBlogPost($id)
 			
 			<div class="meta">
 				<span class="format">Post</span>
-				<span class="user"><a href="#">By <?php echo $row[0]; ?>, </a></span>
+				<span class="user"><a href="#">By <?php echo html_entity_decode($row[0]); ?>, </a></span>
 				<span class="comments">0 comments</span>
-				<span class="tags"><a href="#">test</a>, <a href="#">test</a>, <a href="#">test</a>, <a href="#">test</a></span>
+				<span class="tags"><?php echo $tag_string; ?></span>
 			</div>
 				
 		</div>
@@ -512,5 +512,65 @@ function getFullBlogPost($id)
 	<!-- ENDS  Standard -->
 <?php
 	}
+}
+
+function genMosaic($id)
+{
+	$db = new db_functions();
+	$db->db_connect();
+
+	$query = "SELECT * 
+	FROM `Posts` 
+	WHERE `Crypt` LIKE '$id'
+	LIMIT 0 , 30";
+
+	$result = $db->db_query($query);
+
+	if($row = $db->db_fetch_row($result))
+	{
+		$tag_string = genTags($row[9]);
+
+	?>
+	<figure class="<?php echo $tag_string; ?>">
+		<a href="post.php?id=<?php echo $row[4]; ?>" class="thumb"><img src="<?php echo $row[6]; ?>" alt="alt" /></a>
+		<figcaption>
+			<a href="post.php?id=<?php echo $row[4]; ?>"><h3 class="heading"><?php echo $row[1]; ?></h3></a>
+			<?php echo $row[5]; ?>
+		</figcaption>
+	</figure>
+
+	<?php
+	}
+}
+
+function genTags($tags, $commas = false)
+{
+	$tags = explode(",", $tags);
+
+	$tag_string = "";
+
+	if($commas)
+	{
+		$first = true;
+		foreach ($tags as $tag) 
+		{
+			if($first && sizeof($tags) > 1)
+			{
+				$tag_string .= trim($tag)."";
+				$first = false;
+			}
+			else
+				$tag_string .= ", ".trim($tag);
+		}
+	}
+	else
+	{
+		foreach ($tags as $tag) 
+		{
+			$tag_string .= trim($tag)." ";
+		}
+	}
+
+	return $tag_string;
 }
 ?>

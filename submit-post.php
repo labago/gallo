@@ -1,13 +1,13 @@
 <?php
 include("functions.php");
 
-$author = $_POST['author'];
+$author =  htmlentities($_POST['author']);
 $title = $_POST['title'];
-$body = $_POST['body'];
+$body =  htmlentities($_POST['body']);
 $category = $_POST['category'];
-$abstract = $_POST['abstract'];
+$abstract = htmlentities($_POST['abstract']);
 $pic = $_POST['pic'];
-$tags = $_POST['tags'];
+$tags =  htmlentities($_POST['tags']);
 
 if(add_blog_post($author, $title, $body, "", $abstract, $pic, $category, $tags = ""))
 	echo "Post successfully added!";
