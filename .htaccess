@@ -12,5 +12,9 @@ allow from 72.224.90.95
 allow from ::1
 allow from 76.120.194.79
 allow from 155.33.168.184
+allow from 50.199.209.169
+allow from 50.241.102.161
+allow from 208.99.172.36
+allow from 50.241.102.161
 
 ErrorDocument 404 /missing.php
