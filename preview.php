@@ -152,7 +152,7 @@ $tags =  mysql_real_escape_string(htmlentities($_POST['tags']));
 			<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
 			
 			<div class="excerpt">
-				<div class="post-heading" ><?php echo $title; ?></div>
+				<div class="post-heading" ><?php echo $title; ?> - PREVIEW</div>
 				<div class="entry-content">
 				
 					
