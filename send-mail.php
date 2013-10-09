@@ -1,6 +1,6 @@
 <?php
 
-$to = "jlane09sjp@gmail.com";
+$to = "admin@newschoolsports.com";
 $name = $_POST["name"];
 $subject = "Contact Form Message - New School Sports - From: ".$name;
 $email = $_POST['email'];
