@@ -511,6 +511,24 @@ function makeRowsArray($result, $db)
 	return $rows;
 }
 
+function getBlogInfo($id)
+{
+	$db = new db_functions();
+	$db->db_connect();
+
+	$query = "SELECT * 
+	FROM `Posts` 
+	WHERE `Crypt` LIKE '$id'
+	LIMIT 0 , 30";
+
+	$result = $db->db_query($query);
+
+	if($row = $db->db_fetch_row($result))
+		return $row;
+	else
+		return array();
+}
+
 function getFullBlogPost($id)
 {
 	$db = new db_functions();
@@ -622,5 +640,29 @@ function genTags($tags, $commas = false)
 	}
 
 	return $tag_string;
+}
+
+function stringCleanse($str)
+{
+	$convmap = array(0x80, 0x10ffff, 0, 0xffffff);
+	return str_replace("\\r", "", str_replace("\\n", "", mb_encode_numericentity($str, $convmap, "UTF-8")));
+}
+
+function updatePost($author, $title, $text, $abstract, $picture, $category, $tags, $crypt)
+{
+	$db = new db_functions();
+	$db->db_connect();
+
+	$query = "UPDATE `newschool`.`Posts` SET `Author` = '$author',
+								`Title` = '$title',
+								`Text` = '$text',
+								`Abstract` = '$abstract',
+								`Picture` = '$picture',
+								`Category` = '$category',
+								`Tags` = '$tags' WHERE `Posts`.`Crypt` = '$crypt' LIMIT 1;";
+
+	$db->db_query($query);
+
+	return $crypt;
 }
 ?>

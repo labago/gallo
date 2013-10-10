@@ -4,13 +4,13 @@
 <?php include("functions.php"); ?>
 <?php 
 
-$author =  mysql_real_escape_string(htmlentities($_POST['author']));
-$title = mysql_real_escape_string($_POST['title']);
-$body =  mysql_real_escape_string(htmlentities($_POST['body']));
+$author =  htmlentities($_POST['author']);
+$title = $_POST['title'];
+$body =  stringCleanse($_POST['body']);
 $category = $_POST['category'];
-$abstract = mysql_real_escape_string(htmlentities($_POST['abstract']));
+$abstract = stringCleanse(htmlentities($_POST['abstract']));
 $pic = $_POST['pic'];
-$tags =  mysql_real_escape_string(htmlentities($_POST['tags']));
+$tags =  htmlentities($_POST['tags']);
 
 
 ?>

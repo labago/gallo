@@ -19,6 +19,22 @@ else {
 	}
 	else {
 	?>
+	<head>
+		<link rel="stylesheet" href="js/aloha/css/aloha.css" type="text/css">
+    	<script src="js/aloha/lib/require.js"></script>
+    	<script src="js/aloha/lib/aloha.js" data-aloha-plugins="common/ui,
+								common/format,
+		                        common/table,
+		                        common/list,
+		                        common/link,
+		                        common/highlighteditables,
+		                        common/block,
+		                        common/image,
+		                        common/undo,
+		                        common/contenthandler,
+		                        common/paste,
+		                        common/commands"></script>
+	</head>
 	<body>
 <center>
 		<form action="preview.php" method="post">
@@ -30,8 +46,8 @@ else {
 		<br>
 		Tags: <input type="text" name="tags" size="21" >
 		<br>
-		Body Content: <br> 
-		<textarea type="text" name="body" rows="10" cols="50"></textarea>
+		Body Content: <br> <br><br><br><br><br><br><br>
+		<textarea type="text" name="body" rows="50" cols="100"></textarea>
 		<br>
 		Category: 
 		<select name="category">
@@ -45,6 +61,11 @@ else {
 		<br>
 		<input type="submit" value="Submit" name="submit">
 		</form>
+		<script type="text/javascript">
+	        Aloha.ready( function() {
+	            Aloha.jQuery('textarea').aloha();
+	        });
+	    </script>
 
 
 		TIPS:
