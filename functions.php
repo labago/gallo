@@ -1,8 +1,9 @@
 <?php
 // functions file 
 include("resources/db.php");
+include("resources/creds.php");
+include("facebook-checks.php");
 record_visit();
-
 
 $db = new db_functions();
 
@@ -111,6 +112,33 @@ function fetch_user_info($crypt)
 	return $info;
 }
 
+// returns all user attributes based on fb token
+function fetch_user_info_token($token)
+{
+  
+	$db = new db_functions();
+    $db->db_connect();
+
+	$query = "SELECT * 
+	FROM  `Users` 
+	WHERE  `Facebook ID` LIKE  '$token'
+	LIMIT 0 , 30";  
+
+	$result = $db->db_query($query);
+
+	$info = array();
+
+	if($row = $db->db_fetch_row($result))
+	{
+		foreach($row as $row_item)
+		{
+			array_push($info, $row_item);	
+		}
+	}
+
+	return $info;
+}
+
 // genereates a random picture name
 function gen_pic_name($original)
 {
@@ -142,6 +170,22 @@ function update_user_info($fname, $lname, $email, $password, $crypt)
 
 	$db->db_query($query);
 
+}
+
+function update_user_facebook_info($fname, $lname, $email, $pic, $id, $crypt, $access_token)
+{
+	$db = new db_functions();
+    $db->db_connect();
+
+	$query = "UPDATE `newschool`.`Users` SET `First Name` = '$fname',
+			`Last Name` = '$lname',
+			`Email` = '$email',
+			`Password` = '$password',
+			`Picture` = '$pic', 
+			`Facebook ID` = '$id',
+			`Access` = '$access_token' WHERE `Users`.`Crypt` = '$crypt' LIMIT 1 ;";
+
+	$db->db_query($query);
 }
 
 // records a visit from any user, guest or member
