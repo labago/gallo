@@ -1,4 +1,15 @@
 <ul id="nav" class="sf-menu">
+	<li>
+		<?php if($fb_user)
+		{
+			echo "<a href='#'>Welcome ".$user_profile['first_name']."</a>";
+		}
+		else
+		{
+			echo "<a href='".$loginUrl."'>Connect With Facebook</a>";
+		}
+		?>
+	</li>
 	<li><a href="../index.php"><span>HOME</span></a></li>
 	<li><a href="../blog.php">BLOG</a>
 		<ul>
