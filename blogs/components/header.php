@@ -75,6 +75,10 @@
 		<!-- flexslider -->
 		<link rel="stylesheet" href="../css/flexslider.css" >
 		<script src="../js/jquery.flexslider.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript">var switchTo5x=true;</script>
+		<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script type="text/javascript">stLight.options({publisher: "6bec0094-1e46-4d95-8f5c-37920450513f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 		
 	</head>
 	

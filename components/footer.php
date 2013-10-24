@@ -3,7 +3,7 @@
 			<div class="wrapper cf">
 			
 				<!-- widgets -->
-				<ul  class="widget-cols cf">
+				<!-- <ul  class="widget-cols cf">
 					<li class="first-col">
 						
 						<div class="widget-block">
@@ -64,7 +64,7 @@
 						</div>
 		         		
 					</li>	
-				</ul>
+				</ul> -->
 				<!-- ENDS widgets -->	
 				
 				

@@ -31,7 +31,7 @@
 				<!-- sidebar -->
         	<aside id="sidebar">
         		
-        		<ul>
+        		<!-- <ul>
 	        		<li class="block">
 		        		<h4>Categories</h4>
 						<ul>
@@ -55,7 +55,7 @@
 						</ul>
 	        		</li>
         		
-        		</ul>
+        		</ul> -->
         		
         	</aside>
 			<!-- ENDS sidebar -->

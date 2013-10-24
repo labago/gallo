@@ -24,6 +24,10 @@
 					
 					
 				<!-- comments list -->
+				<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+				<span class='st_facebook_hcount' displayText='Facebook'></span>
+				<span class='st_twitter_hcount' displayText='Tweet'></span>
+				<span class='st_sharethis_hcount' displayText='ShareThis'></span>
 				<div id="comments-wrap">
 					<!-- <h4 class="heading">5 Comments</h4> -->
 					
@@ -160,7 +164,7 @@
 			<!-- sidebar -->
         	<aside id="sidebar">
         		
-        		<ul>
+        		<!-- <ul>
 	        		<li class="block">
 		        		<h4>Categories</h4>
 						<ul>
@@ -184,7 +188,7 @@
 						</ul>
 	        		</li>
         		
-        		</ul>
+        		</ul> -->
         		
         	</aside>
 			<!-- ENDS sidebar -->
