@@ -415,7 +415,7 @@ function genArticle($id)
 			</div>
 			<?php } ?>
 			<div class="box cf">
-				<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
+				<div class="entry-date"><div class="number"><?php echo date("d", strtotime($row[3])); ?></div><div class="month"><?php echo date("M", strtotime($row[3])); ?></div></div>
 				
 				<div class="excerpt">
 					<a href="post.php?id=<?php echo $row[4]; ?>" class="post-heading" ><?php echo html_entity_decode($row[1]); ?></a>
@@ -553,7 +553,7 @@ function getFullBlogPost($id)
 		</div>
 		<?php } ?>
 		<div class="box cf">
-			<div class="entry-date"><div class="number">23</div><div class="month">JAN</div></div>
+			<div class="entry-date"><div class="number"><?php echo date("d", strtotime($row[3])); ?></div><div class="month"><?php echo date("M", strtotime($row[3])); ?></div></div>
 			
 			<div class="excerpt">
 				<div class="post-heading" ><?php echo html_entity_decode($row[1]); ?></div>
@@ -664,5 +664,51 @@ function updatePost($author, $title, $text, $abstract, $picture, $category, $tag
 	$db->db_query($query);
 
 	return $crypt;
+}
+
+function genSlideShowSlides()
+{
+	$posts = getBlogPosts();
+	$counter = 0;
+
+	foreach ($posts as $post) {
+
+		if(strlen($post[6]) > 1 && $counter < 5)
+		{
+			?>
+			<li>
+		    	<img src="<?php echo $post[6]; ?>" alt="alt" />           
+		    	<div class="slider-description">
+		    		<h4><?php echo $post[1]; ?></h4>
+		    		<p><?php echo $post[5]; ?>
+		    			<a class="link" href="posts.php?id=<?php echo $post[4]; ?>">Read more </a>
+		     		</p>
+		    	</div>
+		    </li>
+
+<?php 
+			$counter++;
+		}
+	}
+}
+
+function genSlideShowThumbnails()
+{
+	$posts = getBlogPosts();
+	$counter = 0;
+
+	foreach ($posts as $post) {
+
+		if(strlen($post[6]) > 1 && $counter < 5)
+		{
+			?>
+			 <li>
+		          <img src="<?php echo $post[6]; ?>" title="" alt="alt" />           
+		    </li>
+
+	<?php 
+			$counter++;
+		}
+	}
 }
 ?>
