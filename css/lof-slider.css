@@ -97,7 +97,7 @@
   display: table;
   margin-top: 18px;
   padding: 3px;
-  background: #cb5432;
+  background: #3399FF;
   color: #000;
 }
 .lof-slidecontent .main-slider-content:hover .slider-description {
@@ -125,13 +125,13 @@
 .lof-slidecontent .navigator-content .button-next {
   float: left;
   text-indent: -999px;
-  background: url(../img/arrow-right-dark.png) center center no-repeat #cb5432;
+  background: url(../img/arrow-right-dark.png) center center no-repeat #3399FF;
 }
 .lof-slidecontent .navigator-content .button-previous {
   float: left;
   text-indent: -999px;
   right: 30px;
-  background: url(../img/arrow-left-dark.png) center center no-repeat #cb5432;
+  background: url(../img/arrow-left-dark.png) center center no-repeat #3399FF;
 }
 .lof-slidecontent .navigator-content .button-control {
   float: left;

@@ -108,6 +108,15 @@ h6 {
 .entry-content{
   line-height: 25px;
   margin-right: 35px;
+
+}
+
+.entry-content ol{
+  list-style: decimal;
+}
+
+.entry-content ul{
+  list-style: decimal;
 }
 /* COMBO NAVIGATION ------------------------------------------------------------*/
 #comboNav {
