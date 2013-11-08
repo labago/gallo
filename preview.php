@@ -9,9 +9,41 @@ $title = $_POST['title'];
 $body =  stringCleanse($_POST['body']);
 $category = $_POST['category'];
 $abstract = stringCleanse(htmlentities($_POST['abstract']));
-$pic = $_POST['pic'];
 $tags =  htmlentities($_POST['tags']);
 
+if(isset($_POST['pic_url']) && strlen($_POST['pic_url']) > 1)
+	$pic_name = $_POST['pic_url'];
+else
+	$pic_name = "";
+
+if(isset($_FILES['pic']) && $pic_name == ""){
+	echo "HERE";
+
+	if ((($_FILES["pic"]["type"] == "image/gif")
+	|| ($_FILES["pic"]["type"] == "image/jpeg")
+	|| ($_FILES["pic"]["type"] == "image/pjpeg")
+	|| ($_FILES["pic"]["type"] == "image/png"))
+	&& ($_FILES["pic"]["size"] < 200000000))
+	  {
+	  if ($_FILES["pic"]["error"] > 0)
+	    {
+	    echo 'Something went wrong';
+	    }
+	  else
+	    {
+	$pic_name = gen_pic_name($_FILES["pic"]["name"]);
+
+	move_uploaded_file($_FILES["pic"]["tmp_name"], "uploads/" . $pic_name);
+
+	$pic_name = "uploads/".$pic_name;
+
+	//need to update database here and refresh page
+	}
+	}
+	else {
+		
+	}
+}
 
 ?>
 
@@ -143,9 +175,9 @@ $tags =  htmlentities($_POST['tags']);
 	        		
 					<!-- Standard -->
 	<article class="format-standard">
-		<?php if($pic != ""){ ?>
+		<?php if($pic_name != ""){ ?>
 		<div class="feature-image">
-			<img src="<?php echo $pic; ?>" alt="Alt text" />
+			<img src="<?php echo $pic_name; ?>" alt="Alt text" />
 		</div>
 		<?php } ?>
 		<div class="box cf">
@@ -178,7 +210,7 @@ $tags =  htmlentities($_POST['tags']);
 		<input type="hidden" name="tags" size="21" value="<?php echo $tags; ?>"> 
 		<textarea name="body" style="display: none;" rows="10" cols="50"><?php echo $body; ?></textarea>
 		<input type="hidden" name="category" size="21" value="<?php echo $category; ?>">
-		<input type="hidden" name="pic" size="21" value="<?php echo $pic; ?>">
+		<input type="hidden" name="pic" size="21" value="<?php echo $pic_name; ?>">
 		<input type="submit" value="Submit Final" name="submit">
 	</form>
 	<!-- ENDS  Standard -->

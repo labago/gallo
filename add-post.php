@@ -21,6 +21,7 @@ else {
 	?>
 	<head>
 		<link rel="stylesheet" href="js/aloha/css/aloha.css" type="text/css">
+		<script src="js/jquery-1.7.1.min.js"></script>
     	<script src="js/aloha/lib/require.js"></script>
     	<script src="js/aloha/lib/aloha.js" data-aloha-plugins="common/ui,
 								common/format,
@@ -37,7 +38,7 @@ else {
 	</head>
 	<body>
 <center>
-		<form action="preview.php" method="post">
+		<form action="preview.php" method="post" enctype="multipart/form-data">
 		Author: <input type="text" name="author" size="21" >
 		<br>
 		Title: <input type="text" name="title" size="21" >
@@ -57,7 +58,16 @@ else {
 			<option value="COLLEGE FOOTBALL">COLLEGE FOOTBALL</option>	
 		</select>
 		<br>
-		Picture URL: <input type="text" name="pic" size="21" >
+		<br>
+
+		<div class="upload">
+			<input type="button" value="Use URL"><br>
+			Picture: <input id="local" type="file" name="pic" size="10000000"><br>
+		</div>
+		<div class="url">
+			<input type="button" value="Upload Picture"><br>
+			Picture URL: <input type="text" name="pic_url" size="21" >
+		</div>
 		<br>
 		<input type="submit" value="Submit" name="submit">
 		</form>
@@ -65,6 +75,20 @@ else {
 	        Aloha.ready( function() {
 	            Aloha.jQuery('textarea').aloha();
 	        });
+
+	        $('.upload input[type=button]').click(function(){
+	        	$('.upload').hide();
+	        	$('.url').show();
+	        })
+
+	        $('.upload').hide();
+
+	        $('.url input[type=button]').click(function(){
+	        	$('.upload').show();
+	        	$('.url').hide();
+	        })
+
+
 	    </script>
 
 
