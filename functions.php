@@ -681,7 +681,7 @@ function genSlideShowSlides()
 		    	<div class="slider-description">
 		    		<h4><?php echo $post[1]; ?></h4>
 		    		<p><?php echo $post[5]; ?>
-		    			<a class="link" href="posts.php?id=<?php echo $post[4]; ?>">Read more </a>
+		    			<a class="link" href="post.php?id=<?php echo $post[4]; ?>">Read more </a>
 		     		</p>
 		    	</div>
 		    </li>
